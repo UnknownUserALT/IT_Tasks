@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int stopcount()
+{
+    int stops;
+    int total—ost = 0;
+    const int pricePerStop = 5;
+
+    cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó ÓÒÚ‡ÌÓ‚ÓÍ: ";
+    cin >> stops;
+
+
+    for (int i = 0; i < stops; i++) {
+        total—ost += pricePerStop;
+    }
+
+    cout << "Œ·˘‡ˇ ÒÚÓËÏÓÒÚ¸ ÔÓÂÁ‰‡: " << total—ost << " Û·ÎÂÈ" << endl;
+
+    return 0;
+}

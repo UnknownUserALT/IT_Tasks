@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\bmstu\\MyProject\\Geometry\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\Proverka _3tochki.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:Proverka _3tochki.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\Peresech_2_Mnogoug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:Peresech_2_Mnogoug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\P_Mnogougolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:P_Mnogougolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\Geometry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:Geometry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\Peresech_2otrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:Peresech_2otrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\S_Treugolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:S_Treugolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\DlinaOtrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:DlinaOtrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\PrinadlezhTochki.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:PrinadlezhTochki.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\DiagPramougolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:DiagPramougolnika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|C:\\bmstu\\MyProject\\Geometry\\CentrMassTreug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08601378-86F0-47C5-B401-D0E356E1D135}|Geometry.vcxproj|solutionrelative:CentrMassTreug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Peresech_2_Mnogoug.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\Peresech_2_Mnogoug.cpp",
+              "RelativeDocumentMoniker": "Peresech_2_Mnogoug.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\Peresech_2_Mnogoug.cpp",
+              "RelativeToolTip": "Peresech_2_Mnogoug.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T10:23:37.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Geometry.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\Geometry.cpp",
+              "RelativeDocumentMoniker": "Geometry.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\Geometry.cpp",
+              "RelativeToolTip": "Geometry.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T09:42:51.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "P_Mnogougolnika.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\P_Mnogougolnika.cpp",
+              "RelativeDocumentMoniker": "P_Mnogougolnika.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\P_Mnogougolnika.cpp",
+              "RelativeToolTip": "P_Mnogougolnika.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T09:51:11.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proverka _3tochki.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\Proverka _3tochki.cpp",
+              "RelativeDocumentMoniker": "Proverka _3tochki.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\Proverka _3tochki.cpp",
+              "RelativeToolTip": "Proverka _3tochki.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T10:00:59.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Peresech_2otrez.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\Peresech_2otrez.cpp",
+              "RelativeDocumentMoniker": "Peresech_2otrez.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\Peresech_2otrez.cpp",
+              "RelativeToolTip": "Peresech_2otrez.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T10:04:23.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "S_Treugolnika.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\S_Treugolnika.cpp",
+              "RelativeDocumentMoniker": "S_Treugolnika.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\S_Treugolnika.cpp",
+              "RelativeToolTip": "S_Treugolnika.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T09:46:00.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DlinaOtrez.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\DlinaOtrez.cpp",
+              "RelativeDocumentMoniker": "DlinaOtrez.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\DlinaOtrez.cpp",
+              "RelativeToolTip": "DlinaOtrez.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T10:20:39.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PrinadlezhTochki.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\PrinadlezhTochki.cpp",
+              "RelativeDocumentMoniker": "PrinadlezhTochki.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\PrinadlezhTochki.cpp",
+              "RelativeToolTip": "PrinadlezhTochki.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T10:08:27.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DiagPramougolnika.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\DiagPramougolnika.cpp",
+              "RelativeDocumentMoniker": "DiagPramougolnika.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\DiagPramougolnika.cpp",
+              "RelativeToolTip": "DiagPramougolnika.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T09:58:17.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CentrMassTreug.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Geometry\\CentrMassTreug.cpp",
+              "RelativeDocumentMoniker": "CentrMassTreug.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Geometry\\CentrMassTreug.cpp",
+              "RelativeToolTip": "CentrMassTreug.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-05T09:54:42.993Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

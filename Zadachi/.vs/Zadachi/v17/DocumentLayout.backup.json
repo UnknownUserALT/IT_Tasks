@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\bmstu\\MyProject\\Zadachi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|C:\\bmstu\\MyProject\\Zadachi\\Zadachi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|solutionrelative:Zadachi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|C:\\bmstu\\MyProject\\Zadachi\\ProverkaChisla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|solutionrelative:ProverkaChisla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|C:\\bmstu\\MyProject\\Zadachi\\Summa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|solutionrelative:Summa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|C:\\bmstu\\MyProject\\Zadachi\\TabOfSquare.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA678F82-9EA2-4ABE-B10E-CB648475D833}|Zadachi.vcxproj|solutionrelative:TabOfSquare.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProverkaChisla.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Zadachi\\ProverkaChisla.cpp",
+              "RelativeDocumentMoniker": "ProverkaChisla.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Zadachi\\ProverkaChisla.cpp",
+              "RelativeToolTip": "ProverkaChisla.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-26T19:27:44.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TabOfSquare.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Zadachi\\TabOfSquare.cpp",
+              "RelativeDocumentMoniker": "TabOfSquare.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Zadachi\\TabOfSquare.cpp",
+              "RelativeToolTip": "TabOfSquare.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-26T19:23:38.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Summa.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Zadachi\\Summa.cpp",
+              "RelativeDocumentMoniker": "Summa.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Zadachi\\Summa.cpp",
+              "RelativeToolTip": "Summa.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-26T19:17:54.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Zadachi.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\Zadachi\\Zadachi.cpp",
+              "RelativeDocumentMoniker": "Zadachi.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\Zadachi\\Zadachi.cpp",
+              "RelativeToolTip": "Zadachi.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-26T18:27:40.059Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
