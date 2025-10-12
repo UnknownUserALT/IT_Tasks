@@ -1,41 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\bmstu\\MyProject\\Matrix24September\\",
+  "WorkspaceRootPath": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\SpiralMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SpiralMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SystemOfEquations7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\Matrix24September.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SystemOfEquations6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemeOfEquations8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SystemeOfEquations8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralTraversalOfTheMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SpiralTraversalOfTheMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\Matrix24September.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:Matrix24September.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\MagicCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SpiralMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MagicCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:MagicCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\EquationSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\EquationSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:EquationSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\CheckCollinearity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\CheckCollinearity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:CheckCollinearity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\MoveDot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MoveDot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:MoveDot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\AreaTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\AreaTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:AreaTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\MirrorMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MirrorMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:MirrorMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\Matrix24September\\SaddlePoints.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SaddlePoints.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1DF1F77D-D444-4560-AE63-48E0F76D29E4}|Matrix24September.vcxproj|solutionrelative:SaddlePoints.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -46,124 +62,169 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SystemeOfEquations8.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemeOfEquations8.cpp",
+              "RelativeDocumentMoniker": "SystemeOfEquations8.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemeOfEquations8.cpp",
+              "RelativeToolTip": "SystemeOfEquations8.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-12T10:54:26.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SystemOfEquations6.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations6.cpp",
+              "RelativeDocumentMoniker": "SystemOfEquations6.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations6.cpp",
+              "RelativeToolTip": "SystemOfEquations6.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-12T10:41:51.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SystemOfEquations7.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations7.cpp",
+              "RelativeDocumentMoniker": "SystemOfEquations7.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SystemOfEquations7.cpp",
+              "RelativeToolTip": "SystemOfEquations7.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-12T10:49:13.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpiralTraversalOfTheMatrix.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralTraversalOfTheMatrix.cpp",
+              "RelativeDocumentMoniker": "SpiralTraversalOfTheMatrix.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralTraversalOfTheMatrix.cpp",
+              "RelativeToolTip": "SpiralTraversalOfTheMatrix.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-12T11:00:12.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Matrix24September.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\Matrix24September.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\Matrix24September.cpp",
               "RelativeDocumentMoniker": "Matrix24September.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\Matrix24September.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\Matrix24September.cpp",
               "RelativeToolTip": "Matrix24September.cpp",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-11T17:41:28.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EquationSphere.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\EquationSphere.cpp",
-              "RelativeDocumentMoniker": "EquationSphere.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\EquationSphere.cpp",
-              "RelativeToolTip": "EquationSphere.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:51:09.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MagicCube.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\MagicCube.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MagicCube.cpp",
               "RelativeDocumentMoniker": "MagicCube.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\MagicCube.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MagicCube.cpp",
               "RelativeToolTip": "MagicCube.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:44:04.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T17:44:04.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "SpiralMatrix.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\SpiralMatrix.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralMatrix.cpp",
               "RelativeDocumentMoniker": "SpiralMatrix.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\SpiralMatrix.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SpiralMatrix.cpp",
               "RelativeToolTip": "SpiralMatrix.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAcwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-11T17:46:32.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CheckCollinearity.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\CheckCollinearity.cpp",
-              "RelativeDocumentMoniker": "CheckCollinearity.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\CheckCollinearity.cpp",
-              "RelativeToolTip": "CheckCollinearity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:49:48.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MoveDot.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\MoveDot.cpp",
-              "RelativeDocumentMoniker": "MoveDot.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\MoveDot.cpp",
-              "RelativeToolTip": "MoveDot.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:48:47.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AreaTriangle.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\AreaTriangle.cpp",
-              "RelativeDocumentMoniker": "AreaTriangle.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\AreaTriangle.cpp",
-              "RelativeToolTip": "AreaTriangle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:47:44.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MirrorMatrix.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\MirrorMatrix.cpp",
-              "RelativeDocumentMoniker": "MirrorMatrix.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\MirrorMatrix.cpp",
-              "RelativeToolTip": "MirrorMatrix.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Title": "EquationSphere.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\EquationSphere.cpp",
+              "RelativeDocumentMoniker": "EquationSphere.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\EquationSphere.cpp",
+              "RelativeToolTip": "EquationSphere.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:42:47.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T17:51:09.785Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "CheckCollinearity.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\CheckCollinearity.cpp",
+              "RelativeDocumentMoniker": "CheckCollinearity.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\CheckCollinearity.cpp",
+              "RelativeToolTip": "CheckCollinearity.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-11T17:49:48.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MoveDot.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MoveDot.cpp",
+              "RelativeDocumentMoniker": "MoveDot.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MoveDot.cpp",
+              "RelativeToolTip": "MoveDot.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-11T17:48:47.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AreaTriangle.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\AreaTriangle.cpp",
+              "RelativeDocumentMoniker": "AreaTriangle.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\AreaTriangle.cpp",
+              "RelativeToolTip": "AreaTriangle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-11T17:47:44.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MirrorMatrix.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MirrorMatrix.cpp",
+              "RelativeDocumentMoniker": "MirrorMatrix.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\MirrorMatrix.cpp",
+              "RelativeToolTip": "MirrorMatrix.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-11T17:42:47.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SaddlePoints.cpp",
-              "DocumentMoniker": "C:\\bmstu\\MyProject\\Matrix24September\\SaddlePoints.cpp",
+              "DocumentMoniker": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SaddlePoints.cpp",
               "RelativeDocumentMoniker": "SaddlePoints.cpp",
-              "ToolTip": "C:\\bmstu\\MyProject\\Matrix24September\\SaddlePoints.cpp",
+              "ToolTip": "C:\\bmstu\\MyProject\\IT_Tasks\\Matrix24September\\SaddlePoints.cpp",
               "RelativeToolTip": "SaddlePoints.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-11T17:45:20.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T17:45:20.546Z"
             }
           ]
         }

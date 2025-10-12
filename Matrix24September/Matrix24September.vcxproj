@@ -132,6 +132,10 @@
     <ClCompile Include="MoveDot.cpp" />
     <ClCompile Include="SaddlePoints.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
+    <ClCompile Include="SpiralTraversalOfTheMatrix.cpp" />
+    <ClCompile Include="SystemeOfEquations8.cpp" />
+    <ClCompile Include="SystemOfEquations6.cpp" />
+    <ClCompile Include="SystemOfEquations7.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

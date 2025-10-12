@@ -1,4 +1,4 @@
-﻿  SpiralMatrix.cpp
-C:\bmstu\MyProject\Matrix24September\SpiralMatrix.cpp(10,13): warning C4566: символ, представленный универсальным именем символа "\u2264", невозможно представить в текущей кодовой странице (1251)
-C:\bmstu\MyProject\Matrix24September\SpiralMatrix.cpp(69,41): warning C4566: символ, представленный универсальным именем символа "\u00D7", невозможно представить в текущей кодовой странице (1251)
-  Matrix24September.vcxproj -> C:\bmstu\MyProject\Matrix24September\x64\Debug\Matrix24September.exe
+﻿  Matrix24September.cpp
+  SpiralTraversalOfTheMatrix.cpp
+  Создание кода...
+  Matrix24September.vcxproj -> C:\bmstu\MyProject\IT_Tasks\Matrix24September\x64\Debug\Matrix24September.exe

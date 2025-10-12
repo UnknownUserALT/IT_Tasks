@@ -2,6 +2,10 @@
 //
 
 #include <iostream>
+int spiraltraversal();
+int systemeofequations8();
+int systemofequations7();
+int systemofequations6();
 int areatriangle();
 int chekcollinearity();
 int equationsp();
@@ -12,6 +16,10 @@ int saddlepoints();
 int spiralmatrix();
 int main()
 {
+    spiraltraversal();
+    //systemeofequations8();
+    //systemofequations7();
+    //systemofequations6();
     //areatriangle();
    //chekcollinearity();
    // equationsp();
@@ -19,5 +27,5 @@ int main()
     //mirrorm();
     //movedot();
     //saddlepoints();
-    spiralmatrix();
+    //spiralmatrix();
 }
