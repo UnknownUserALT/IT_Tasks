@@ -200,6 +200,8 @@ void findLongestCommonSubstring(char words[][MAX_WORD_LEN], int wordCount, char*
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
+
     // Объявляем массивы для хранения данных
     char input[MAX_INPUT_SIZE];              // Буфер для входной строки
     char words[MAX_WORDS_COUNT][MAX_WORD_LEN]; // Массив для хранения слов
