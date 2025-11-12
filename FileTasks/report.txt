@@ -1,0 +1,3 @@
+Sensor1: min = 22.5, max = 22.7, avg = 22.6
+Sensor2: min = 21.8, max = 22, avg = 21.9
+Sensor3: min = 23.1, max = 23.3, avg = 23.2

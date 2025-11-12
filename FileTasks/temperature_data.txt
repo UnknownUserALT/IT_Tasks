@@ -1,0 +1,6 @@
+Sensor1 22.5
+Sensor2 21.8
+Sensor3 23.1
+Sensor1 22.7
+Sensor2 22.0
+Sensor3 23.3
