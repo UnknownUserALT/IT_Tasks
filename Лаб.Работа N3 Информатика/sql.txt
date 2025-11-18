@@ -1,0 +1,130 @@
+1) Создание базы данных:
+
+CREATE DATABASE task_management;
+\c task_management;
+
+2) Создание таблиц:
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    priority VARCHAR(20) CHECK (priority IN ('Высокий', 'Средний', 'Низкий')) NOT NULL,
+    due_date DATE NOT NULL,
+    status VARCHAR(20) CHECK (status IN ('Выполнена', 'В процессе', 'Отложена')) NOT NULL
+);
+
+CREATE TABLE task_assignments (
+    assignment_id SERIAL PRIMARY KEY,
+    task_id INT NOT NULL,
+    user_id INT NOT NULL
+);
+
+3) Связи между таблицами:
+
+ALTER TABLE task_assignments 
+ADD CONSTRAINT fk_task_assignments_tasks 
+FOREIGN KEY (task_id) REFERENCES tasks(id) 
+ON DELETE CASCADE;
+
+ALTER TABLE task_assignments 
+ADD CONSTRAINT fk_task_assignments_users 
+FOREIGN KEY (user_id) REFERENCES users(id) 
+ON DELETE CASCADE;
+
+4) Добавление данных: 
+
+INSERT INTO users (name) VALUES 
+('Иван Петров'),
+('Мария Сидорова'),
+('Алексей Козлов'),
+('Елена Новикова'),
+('Дмитрий Волков');
+
+INSERT INTO tasks (title, priority, due_date, status) VALUES 
+('Разработать макет сайта', 'Высокий', CURRENT_DATE + INTERVAL '1 day', 'В процессе'),
+('Написать техническую документацию', 'Средний', CURRENT_DATE + INTERVAL '10 days', 'Отложена'),
+('Исправить ошибки в коде', 'Высокий', CURRENT_DATE + INTERVAL '3 days', 'В процессе'),
+('Провести тестирование', 'Средний', CURRENT_DATE + INTERVAL '15 days', 'Выполнена'),
+('Подготовить отчет', 'Низкий', CURRENT_DATE + INTERVAL '20 days', 'В процессе'),
+('Обновить базу данных', 'Высокий', CURRENT_DATE + INTERVAL '7 days', 'В процессе'),
+('Срочный багфикс', 'Высокий', CURRENT_DATE + INTERVAL '5 days', 'В процессе'),
+('Критическое обновление', 'Высокий', CURRENT_DATE - INTERVAL '1 day', 'В процессе'),
+('Плановое обслуживание', 'Низкий', CURRENT_DATE + INTERVAL '2 days', 'В процессе'),
+('Оптимизация кода', 'Высокий', CURRENT_DATE + INTERVAL '6 days', 'Отложена');
+
+INSERT INTO task_assignments (task_id, user_id) VALUES 
+(1, 1),
+(1, 2),
+(2, 3),
+(3, 1),
+(4, 4),
+(5, 5),
+(6, 2),
+(6, 3),
+(7, 1),
+(8, 3),
+(9, 4),
+(10, 2);
+
+5) Запросы:
+
+
+SELECT id, title, priority, due_date, status 
+FROM tasks 
+ORDER BY due_date;
+
+SELECT t.id, t.title, t.priority, t.due_date, t.status 
+FROM tasks t
+JOIN task_assignments ta ON t.id = ta.task_id
+WHERE ta.user_id = 1;
+
+
+SELECT id, title, priority, due_date, status 
+FROM tasks 
+WHERE priority = 'Высокий' 
+AND due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days'
+AND status != 'Выполнена';
+
+
+SELECT status, COUNT(*) as task_count 
+FROM tasks 
+GROUP BY status;
+
+6) Доп. Задание:
+
+-- Отчет о просроченных задачах и ответственных пользователях
+SELECT 
+    t.id,
+    t.title,
+    t.priority,
+    t.due_date,
+    t.status,
+    u.name as responsible_user
+FROM tasks t
+JOIN task_assignments ta ON t.id = ta.task_id
+JOIN users u ON ta.user_id = u.id
+WHERE t.due_date < CURRENT_DATE 
+AND t.status != 'Выполнена'
+ORDER BY 
+    CASE 
+        WHEN t.priority = 'Высокий' THEN 1
+        WHEN t.priority = 'Средний' THEN 2
+        WHEN t.priority = 'Низкий' THEN 3
+    END,
+    t.due_date;
+
+-- Обновление статуса задачи по идентификатору
+UPDATE tasks 
+SET status = 'Выполнена' 
+WHERE id = 4;
+
+-- Удаление задачи с проверкой связей (благодаря CASCADE удалятся и назначения)
+DELETE FROM tasks 
+WHERE id = 5;
+
+

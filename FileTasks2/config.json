@@ -1,0 +1,14 @@
+{
+ "app_name": "My Application",
+ "version": "1.0.0",
+ "settings": {
+ "max_connections": 100,
+ "timeout": 60,
+ "debug_mode": false
+ },
+ "database": {
+ "host": "127.0.0.1",
+ "port": 5432,
+ "username": "admin"
+ }
+}
