@@ -1,17 +1,17 @@
 1) Создание базы данных:
 
 CREATE DATABASE task_management;
-\c task_management;
+
 
 2) Создание таблиц:
 
 CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE tasks (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     priority VARCHAR(20) CHECK (priority IN ('Высокий', 'Средний', 'Низкий')) NOT NULL,
     due_date DATE NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE tasks (
 );
 
 CREATE TABLE task_assignments (
-    assignment_id SERIAL PRIMARY KEY,
+    assignment_id INT PRIMARY KEY,
     task_id INT NOT NULL,
     user_id INT NOT NULL
 );
@@ -38,39 +38,38 @@ ON DELETE CASCADE;
 
 4) Добавление данных: 
 
-INSERT INTO users (name) VALUES 
-('Иван Петров'),
-('Мария Сидорова'),
-('Алексей Козлов'),
-('Елена Новикова'),
-('Дмитрий Волков');
+INSERT INTO users (id, name) VALUES 
+(1, 'Иван Петров'),
+(2, 'Мария Сидорова'),
+(3, 'Алексей Козлов'),
+(4, 'Елена Новикова'),
+(5, 'Дмитрий Волков');
 
-INSERT INTO tasks (title, priority, due_date, status) VALUES 
-('Разработать макет сайта', 'Высокий', CURRENT_DATE + INTERVAL '1 day', 'В процессе'),
-('Написать техническую документацию', 'Средний', CURRENT_DATE + INTERVAL '10 days', 'Отложена'),
-('Исправить ошибки в коде', 'Высокий', CURRENT_DATE + INTERVAL '3 days', 'В процессе'),
-('Провести тестирование', 'Средний', CURRENT_DATE + INTERVAL '15 days', 'Выполнена'),
-('Подготовить отчет', 'Низкий', CURRENT_DATE + INTERVAL '20 days', 'В процессе'),
-('Обновить базу данных', 'Высокий', CURRENT_DATE + INTERVAL '7 days', 'В процессе'),
-('Срочный багфикс', 'Высокий', CURRENT_DATE + INTERVAL '5 days', 'В процессе'),
-('Критическое обновление', 'Высокий', CURRENT_DATE - INTERVAL '1 day', 'В процессе'),
-('Плановое обслуживание', 'Низкий', CURRENT_DATE + INTERVAL '2 days', 'В процессе'),
-('Оптимизация кода', 'Высокий', CURRENT_DATE + INTERVAL '6 days', 'Отложена');
+INSERT INTO tasks (id, title, priority, due_date, status) VALUES 
+(1, 'Разработать макет сайта', 'Высокий', '2025-11-22', 'В процессе'),
+(2, 'Написать техническую документацию', 'Средний', '2025-12-01', 'Отложена'),
+(3, 'Исправить ошибки в коде', 'Высокий', '2025-11-24', 'В процессе'),
+(4, 'Провести тестирование', 'Средний', '2025-12-06', 'Выполнена'),
+(5, 'Подготовить отчет', 'Низкий', '2025-12-11', 'В процессе'),
+(6, 'Обновить базу данных', 'Высокий', '2025-11-28', 'В процессе'),
+(7, 'Срочный багфикс', 'Высокий', '2025-11-26', 'В процессе'),
+(8, 'Критическое обновление', 'Высокий', '2025-11-20', 'В процессе'),
+(9, 'Плановое обслуживание', 'Низкий', '2025-11-23', 'В процессе'),
+(10, 'Оптимизация кода', 'Высокий', '2025-11-27', 'Отложена');
 
-INSERT INTO task_assignments (task_id, user_id) VALUES 
-(1, 1),
-(1, 2),
-(2, 3),
-(3, 1),
-(4, 4),
-(5, 5),
-(6, 2),
-(6, 3),
-(7, 1),
-(8, 3),
-(9, 4),
-(10, 2);
-
+INSERT INTO task_assignments (assignment_id, task_id, user_id) VALUES 
+(1, 1, 1),
+(2, 1, 2),
+(3, 2, 3),
+(4, 3, 1),
+(5, 4, 4),
+(6, 5, 5),
+(7, 6, 2),
+(8, 6, 3),
+(9, 7, 1),
+(10, 8, 3),
+(11, 9, 4),
+(12, 10, 2);
 5) Запросы:
 
 
@@ -87,7 +86,7 @@ WHERE ta.user_id = 1;
 SELECT id, title, priority, due_date, status 
 FROM tasks 
 WHERE priority = 'Высокий' 
-AND due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days'
+AND due_date BETWEEN '2025-11-21' AND '2025-11-28'
 AND status != 'Выполнена';
 
 
@@ -108,7 +107,7 @@ SELECT
 FROM tasks t
 JOIN task_assignments ta ON t.id = ta.task_id
 JOIN users u ON ta.user_id = u.id
-WHERE t.due_date < CURRENT_DATE 
+WHERE t.due_date < '2025-11-21' 
 AND t.status != 'Выполнена'
 ORDER BY 
     CASE 
