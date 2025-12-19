@@ -1,0 +1,3 @@
+D:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build/CMakeFiles/LabRabota4.dir
+D:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build/CMakeFiles/ALL_BUILD.dir
+D:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build/CMakeFiles/ZERO_CHECK.dir

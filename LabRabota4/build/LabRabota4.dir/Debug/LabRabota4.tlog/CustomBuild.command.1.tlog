@@ -1,0 +1,10 @@
+^D:\ПРОЕКТЫ\BMSTU\MYPROJECT\IT_TASKS\LABRABOTA4\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4 -BD:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build --check-stamp-file D:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

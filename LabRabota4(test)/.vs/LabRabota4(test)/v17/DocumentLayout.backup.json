@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\bmstu\\MyProject\\IT_Tasks\\LabRabota4(test)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E916CB-1BD3-4999-8B47-B0972078D953}|LabRabota4(test).vcxproj|D:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\bmstu\\MyProject\\IT_Tasks\\LabRabota4(test)\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2E916CB-1BD3-4999-8B47-B0972078D953}|LabRabota4(test).vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\bmstu\\MyProject\\IT_Tasks\\LabRabota4(test)\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\bmstu\\MyProject\\IT_Tasks\\LabRabota4(test)\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHECAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-19T07:52:42.165Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

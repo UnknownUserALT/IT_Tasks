@@ -4,6 +4,8 @@
 #include <string>
 #include <functional>
 std::ofstream logFile;
+#include <clocale>
+#include<Windows.h>
 
 // Функция для получения текущего времени в формате строки
 std::string getCurrentTime() {
@@ -392,6 +394,9 @@ void displayMenu() {
 
 
 int main() {
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+
     try {
         // Открываем файл логов
         logFile.open("log.txt", std::ios::app);
@@ -403,7 +408,7 @@ int main() {
 
 
         // Строка подключения к базе данных postgres для создания новой БД
-        std::string conninfo = "host=localhost port=5432 dbname=postgres user=postgres password=288288";
+        std::string conninfo = "host=localhost port=5432 dbname=task_management_db user=postgres password=1234567";
 
         // Устанавливаем соединение с базой данных postgres
         pqxx::connection conn(conninfo);
@@ -435,7 +440,7 @@ int main() {
         conn.close();
 
         // Подключаемся к новой базе данных
-        std::string new_conninfo = "host=localhost port=5432 dbname=task_management_db user=postgres password=288288";
+        std::string new_conninfo = "host=localhost port=5432 dbname=task_management_db user=postgres password=1234567";
         pqxx::connection new_conn(new_conninfo);
 
         if (new_conn.is_open()) {

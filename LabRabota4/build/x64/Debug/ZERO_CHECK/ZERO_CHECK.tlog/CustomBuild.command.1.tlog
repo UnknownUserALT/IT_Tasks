@@ -1,0 +1,10 @@
+^D:\ПРОЕКТЫ\BMSTU\MYPROJECT\IT_TASKS\LABRABOTA4\BUILD\CMAKEFILES\6D9DE236A87547BA749722118A8A9992\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4 -BD:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Проекты/bmstu/MyProject/IT_Tasks/LabRabota4/build/LabRabota4.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
