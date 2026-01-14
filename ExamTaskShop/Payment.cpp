@@ -29,7 +29,19 @@ public:
         paymentDate = std::chrono::system_clock::now();
     }
 
+    // Конструктор для вызова из Order без paymentId
+    Payment(int orderId, double amount, const std::string& method)
+        : paymentId(0), orderId(orderId), amount(amount), method(method) {
+        status = "ожидание";
+        paymentDate = std::chrono::system_clock::now();
+    }
+
     ~Payment() = default;
+
+    // Метод для обработки транзакции (алиас для process)
+    bool processTransaction() {
+        return process();
+    }
 
     // Методы оплаты
     bool process() {

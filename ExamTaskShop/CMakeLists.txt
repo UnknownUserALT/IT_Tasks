@@ -262,8 +262,64 @@ if(WIN32)
     endif()
 endif()
 
+# Создание интерактивного исполняемого файла с меню покупателя
+add_executable(CustomerMenuApp
+        main_interactive.cpp
+        DatabaseConnection.hpp
+        PaymentStrategy.hpp
+        User.cpp
+        Admin.cpp
+        Manager.cpp
+        Customer.cpp
+        Order.cpp
+        OrderItem.cpp
+        Payment.cpp
+)
+
+# Добавление директорий с заголовками для интерактивного приложения
+target_include_directories(CustomerMenuApp PRIVATE
+        ${PostgreSQL_INCLUDE_DIRS}
+        ${LIBPQXX_INCLUDE_DIR}
+)
+
+# Линковка библиотек для интерактивного приложения
+if(libpqxx_FOUND)
+    target_link_libraries(CustomerMenuApp
+            ${PostgreSQL_LIBRARIES}
+            libpqxx::pqxx
+    )
+else()
+    target_link_libraries(CustomerMenuApp
+            ${PostgreSQL_LIBRARIES}
+            ${LIBPQXX_LIBRARY}
+    )
+endif()
+
+# Флаги компиляции для интерактивного приложения
+target_compile_options(CustomerMenuApp PRIVATE -std=c++20)
+
+# Для Windows
+if(WIN32)
+    target_compile_definitions(CustomerMenuApp PRIVATE
+            -DNOMINMAX
+            -D_USE_MATH_DEFINES
+    )
+
+    # Копирование DLL библиотек
+    if(PostgreSQL_LIBRARY AND POSTGRESQL_DLLS)
+        add_custom_command(TARGET CustomerMenuApp POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                ${POSTGRESQL_DLLS}
+                $<TARGET_FILE_DIR:CustomerMenuApp>
+        )
+    endif()
+endif()
+
 # Отладочная информация
 message(STATUS "PostgreSQL include dir: ${PostgreSQL_INCLUDE_DIRS}")
 message(STATUS "PostgreSQL library: ${PostgreSQL_LIBRARIES}")
 message(STATUS "libpqxx include dir: ${LIBPQXX_INCLUDE_DIR}")
 message(STATUS "libpqxx library: ${LIBPQXX_LIBRARY}")
+message(STATUS "Building two executables:")
+message(STATUS "  1. TaskExamShop - демонстрация функциональности")
+message(STATUS "  2. CustomerMenuApp - интерактивное меню (Customer/Admin/Manager)")

@@ -34,3 +34,22 @@ public:
     void setPrice(double newPrice) { price = newPrice; }
     void setQuantity(int newQuantity) { quantity = newQuantity; }
 };
+
+// Реализации методов OrderItem
+inline OrderItem::OrderItem(int id, int prodId, int ordId,
+                           const std::string& prodName, double prc, int qty)
+    : itemId(id), productId(prodId), orderId(ordId),
+      productName(prodName), price(prc), quantity(qty) {
+}
+
+inline double OrderItem::calculateSubtotal() const {
+    return price * quantity;
+}
+
+inline void OrderItem::updatePrice(double newPrice) {
+    price = newPrice;
+}
+
+inline void OrderItem::updateQuantity(int newQuantity) {
+    quantity = newQuantity;
+}

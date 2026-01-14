@@ -42,7 +42,7 @@ bool createFunctions(DatabaseConnection& db) {
                     SELECT
                         0 as history_id,
                         o.order_id,
-                        NULL as old_status,
+                        NULL::VARCHAR as old_status,
                         o.status as new_status,
                         o.order_date as changed_at,
                         o.user_id as changed_by,

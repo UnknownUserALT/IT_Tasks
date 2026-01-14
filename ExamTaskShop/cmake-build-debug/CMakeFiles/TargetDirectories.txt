@@ -1,0 +1,4 @@
+/Users/worker/IT_Tasks/ExamTaskShop/cmake-build-debug/CMakeFiles/TaskExamShop.dir
+/Users/worker/IT_Tasks/ExamTaskShop/cmake-build-debug/CMakeFiles/CustomerMenuApp.dir
+/Users/worker/IT_Tasks/ExamTaskShop/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/worker/IT_Tasks/ExamTaskShop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

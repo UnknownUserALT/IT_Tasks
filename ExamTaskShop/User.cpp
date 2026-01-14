@@ -31,3 +31,9 @@ public:
     int getLoyaltyLevel() const { return loyaltyLevel; }
     void setLoyaltyLevel(int level) { loyaltyLevel = level; }
 };
+
+// Реализация конструктора
+inline User::User(int id, const std::string& userName, const std::string& userEmail,
+                  const std::string& userRole, int loyalty)
+    : userId(id), name(userName), email(userEmail), role(userRole), loyaltyLevel(loyalty) {
+}
