@@ -1,0 +1,1 @@
+qmake TankControl.pro && make && open TankControl.app 
