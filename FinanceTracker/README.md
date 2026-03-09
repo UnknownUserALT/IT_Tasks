@@ -1,0 +1,1 @@
+qmake FinanceTracker.pro && make && open FinanceTracker.app 
