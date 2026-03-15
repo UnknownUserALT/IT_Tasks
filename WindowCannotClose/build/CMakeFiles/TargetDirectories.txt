@@ -1,0 +1,5 @@
+/Users/worker/CLionProjects/WindowCannotClose/build/CMakeFiles/WindowCannotClose.dir
+/Users/worker/CLionProjects/WindowCannotClose/build/CMakeFiles/edit_cache.dir
+/Users/worker/CLionProjects/WindowCannotClose/build/CMakeFiles/rebuild_cache.dir
+/Users/worker/CLionProjects/WindowCannotClose/build/CMakeFiles/WindowCannotClose_autogen_timestamp_deps.dir
+/Users/worker/CLionProjects/WindowCannotClose/build/CMakeFiles/WindowCannotClose_autogen.dir

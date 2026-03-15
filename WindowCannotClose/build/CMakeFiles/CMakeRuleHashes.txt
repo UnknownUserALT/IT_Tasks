@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+041563ba6ecf91ad4c485b614a9df8d2 CMakeFiles/WindowCannotClose_autogen
+40b12d887e2c65be0de5d161a0b58dd4 WindowCannotClose_autogen/timestamp

@@ -1293,7 +1293,11 @@ main.o: main.cpp /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QLCDNumber \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/qlcdnumber.h \
 		/opt/homebrew/lib/QtCore.framework/Headers/QTimer \
-		/opt/homebrew/lib/QtCore.framework/Headers/qtimer.h
+		/opt/homebrew/lib/QtCore.framework/Headers/qtimer.h \
+		/opt/homebrew/lib/QtWidgets.framework/Headers/QTextEdit \
+		/opt/homebrew/lib/QtWidgets.framework/Headers/qtextedit.h \
+		/opt/homebrew/lib/QtCore.framework/Headers/QTime \
+		/opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 ####### Install

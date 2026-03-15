@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_WindowCannotClose_FILE /Users/worker/CLionProjects/WindowCannotClose/build/WindowCannotClose)
+set(__QT_DEPLOY_TARGET_WindowCannotClose_TYPE EXECUTABLE)
