@@ -17,13 +17,15 @@ public:
     AddItemCommand(QGraphicsScene *scene, QGraphicsItem *item,
                    QUndoCommand *parent = nullptr);
     ~AddItemCommand() override;
-    void undo() override;
-    void redo() override;
+    void undo() override; ///< Убрать элемент со сцены
+    void redo() override; ///< Добавить элемент на сцену
 
 private:
     QGraphicsScene *m_scene;
     QGraphicsItem  *m_item;
-    bool            m_owned = false; // true, когда элемент НЕ находится на сцене
+    /// true — команда владеет памятью элемента (элемент не на сцене)
+    /// false — сцена владеет элементом
+    bool            m_owned = false;
 };
 
 /**
@@ -38,13 +40,14 @@ public:
     RemoveItemCommand(QGraphicsScene *scene, QGraphicsItem *item,
                       QUndoCommand *parent = nullptr);
     ~RemoveItemCommand() override;
-    void undo() override;
-    void redo() override;
+    void undo() override; ///< Вернуть элемент на сцену
+    void redo() override; ///< Убрать элемент со сцены
 
 private:
     QGraphicsScene *m_scene;
     QGraphicsItem  *m_item;
-    bool            m_owned = true; // true после удаления со сцены
+    /// true после удаления со сцены — команда владеет памятью
+    bool            m_owned = true;
 };
 
 /**
@@ -58,12 +61,13 @@ class MoveItemCommand : public QUndoCommand {
 public:
     MoveItemCommand(QGraphicsItem *item, QPointF oldPos, QPointF newPos,
                     QUndoCommand *parent = nullptr);
-    void undo() override;
-    void redo() override;
+    void undo() override; ///< Вернуть элемент на oldPos
+    void redo() override; ///< Переставить элемент на newPos
 
 private:
     QGraphicsItem *m_item;
-    QPointF        m_oldPos;
-    QPointF        m_newPos;
-    bool           m_firstRedo = true; // пропустить первый вызов — перемещение уже выполнено
+    QPointF        m_oldPos; ///< Позиция до перетаскивания
+    QPointF        m_newPos; ///< Позиция после перетаскивания
+    /// Флаг пропуска первого redo() — перемещение уже выполнено пользователем
+    bool           m_firstRedo = true;
 };

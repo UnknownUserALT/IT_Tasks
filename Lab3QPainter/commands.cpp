@@ -3,37 +3,40 @@
 #include <QGraphicsScene>
 
 // =============================================================================
-// AddItemCommand
+// AddItemCommand — добавление элемента на сцену
 // =============================================================================
 
 AddItemCommand::AddItemCommand(QGraphicsScene *scene, QGraphicsItem *item,
                                QUndoCommand *parent)
     : QUndoCommand(parent), m_scene(scene), m_item(item)
 {
+    // Текст отображается в кнопке "Отменить: Добавить элемент"
     setText("Добавить элемент");
 }
 
 AddItemCommand::~AddItemCommand()
 {
-    // Удаляем элемент только если он сейчас не на сцене —
-    // иначе за его жизнь отвечает сцена.
+    // Удаляем элемент из памяти только если он НЕ находится на сцене.
+    // Если элемент на сцене — за его память отвечает сцена.
     if (m_owned) delete m_item;
 }
 
+// Отмена: убираем элемент со сцены, берём владение памятью
 void AddItemCommand::undo()
 {
     m_scene->removeItem(m_item);
-    m_owned = true; // команда снова владеет элементом
+    m_owned = true; // команда снова отвечает за удаление
 }
 
+// Выполнение (и повтор после Ctrl+Shift+Z): добавляем элемент на сцену
 void AddItemCommand::redo()
 {
     m_scene->addItem(m_item);
-    m_owned = false; // элемент передан сцене
+    m_owned = false; // сцена теперь владеет элементом
 }
 
 // =============================================================================
-// RemoveItemCommand
+// RemoveItemCommand — удаление элемента со сцены
 // =============================================================================
 
 RemoveItemCommand::RemoveItemCommand(QGraphicsScene *scene, QGraphicsItem *item,
@@ -45,25 +48,26 @@ RemoveItemCommand::RemoveItemCommand(QGraphicsScene *scene, QGraphicsItem *item,
 
 RemoveItemCommand::~RemoveItemCommand()
 {
+    // Аналогично AddItemCommand: удаляем только если владеем элементом
     if (m_owned) delete m_item;
 }
 
+// Отмена: возвращаем элемент на сцену, отдаём владение сцене
 void RemoveItemCommand::undo()
 {
-    // Возвращаем элемент на сцену — сцена снова владеет им
     m_scene->addItem(m_item);
     m_owned = false;
 }
 
+// Выполнение: убираем элемент со сцены, берём владение памятью
 void RemoveItemCommand::redo()
 {
-    // Убираем элемент со сцены — команда берёт владение
     m_scene->removeItem(m_item);
     m_owned = true;
 }
 
 // =============================================================================
-// MoveItemCommand
+// MoveItemCommand — перемещение элемента
 // =============================================================================
 
 MoveItemCommand::MoveItemCommand(QGraphicsItem *item, QPointF oldPos, QPointF newPos,
@@ -73,15 +77,18 @@ MoveItemCommand::MoveItemCommand(QGraphicsItem *item, QPointF oldPos, QPointF ne
     setText("Переместить элемент");
 }
 
+// Отмена: возвращаем элемент на позицию до перетаскивания
 void MoveItemCommand::undo()
 {
     m_item->setPos(m_oldPos);
 }
 
+// Выполнение: переставляем элемент на позицию после перетаскивания.
+// Первый вызов пропускаем — QUndoStack::push() вызывает redo() сразу,
+// но элемент уже стоит на newPos после перетаскивания пользователем.
+// Без пропуска элемент бы "дёрнулся" на месте.
 void MoveItemCommand::redo()
 {
-    // QUndoStack::push() сразу вызывает redo(), но элемент уже находится
-    // в newPos после перетаскивания — пропускаем первое срабатывание.
     if (m_firstRedo) { m_firstRedo = false; return; }
     m_item->setPos(m_newPos);
 }

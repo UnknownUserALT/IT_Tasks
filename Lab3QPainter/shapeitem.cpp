@@ -33,12 +33,14 @@ static QColor randomColor()
 ShapeItem::ShapeItem(ShapeType type, QUndoStack *undoStack, QGraphicsItem *parent)
     : QGraphicsItem(parent), m_type(type), m_undoStack(undoStack)
 {
+    // Каждая новая фигура получает случайный цвет заливки
     m_brush   = QBrush(randomColor());
+    // Чёрная обводка толщиной 2 пикселя по умолчанию
     m_basePen = QPen(Qt::black, 2);
 
-    // ItemIsMovable       — встроенное перетаскивание мышью
-    // ItemIsSelectable    — поддержка выделения кликом
-    // ItemSendsGeometryChanges — уведомления itemChange при движении
+    // ItemIsMovable            — встроенное перетаскивание мышью
+    // ItemIsSelectable         — поддержка выделения кликом
+    // ItemSendsGeometryChanges — уведомления itemChange при движении (нужно для undo)
     setFlags(ItemIsMovable | ItemIsSelectable | ItemSendsGeometryChanges);
 
     // Без этого hoverEnterEvent/hoverLeaveEvent не вызываются
@@ -109,9 +111,9 @@ QPainterPath ShapeItem::buildPath() const
 QPainterPath ShapeItem::buildStarPath(qreal size)
 {
     QPainterPath path;
-    const int   n      = 5;
-    const qreal outerR = size / 2.0;   // радиус вершин лучей = 40 пкс
-    const qreal innerR = outerR * 0.4; // радиус впадин        = 16 пкс
+    const int   n      = 5;              // количество лучей звезды
+    const qreal outerR = size / 2.0;    // радиус вершин лучей = 40 пкс
+    const qreal innerR = outerR * 0.4;  // радиус впадин        = 16 пкс
 
     for (int i = 0; i < n * 2; ++i) {
         // Угол i-й точки: стартуем с −π/2 и делаем шаги по π/n = 36°.
@@ -123,11 +125,12 @@ QPainterPath ShapeItem::buildStarPath(qreal size)
         // Перевод полярных координат (r, angle) в декартовы (x, y).
         QPointF pt(r * std::cos(angle), r * std::sin(angle));
 
-        if (i == 0) path.moveTo(pt); // первая точка — начало контура
-        else        path.lineTo(pt); // остальные — прямые отрезки
+        if (i == 0) path.moveTo(pt); // первая точка — начало контура, линия не рисуется
+        else        path.lineTo(pt); // остальные — прямые отрезки от предыдущей точки
     }
 
-    path.closeSubpath(); // соединяем последнюю точку с первой
+    // Соединяем последнюю точку с первой, замыкая контур звезды
+    path.closeSubpath();
     return path;
 }
 
@@ -137,6 +140,7 @@ QPainterPath ShapeItem::buildStarPath(qreal size)
 
 void ShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
 {
+    // Сглаживание — плавные края без "лесенки" из пикселей
     painter->setRenderHint(QPainter::Antialiasing);
 
     // При коллизии обводка становится красной (толщина 3);
@@ -150,19 +154,23 @@ void ShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidg
 // Публичные сеттеры
 // =============================================================================
 
+// Изменяет цвет заливки и запрашивает перерисовку.
+// Вызывается из mouseDoubleClickEvent после выбора цвета в диалоге.
 void ShapeItem::setFillColor(const QColor &color)
 {
     m_brush.setColor(color);
-    update(); // запрашиваем перерисовку
+    update(); // без update() изменение не отобразится на экране
 }
 
+// Изменяет перо обводки (толщину и стиль) и запрашивает перерисовку.
+// Вызывается из контекстного меню.
 void ShapeItem::setBasePen(const QPen &pen)
 {
     m_basePen = pen;
     update();
 }
 
-// Вызывается из MainWindow::checkCollisions().
+// Вызывается из MainWindow::checkCollisions() каждые 100 мс.
 // update() вызывается только при реальном изменении флага — экономим перерисовки.
 void ShapeItem::setColliding(bool colliding)
 {
@@ -190,9 +198,9 @@ void ShapeItem::updateEffect()
     } else if (m_hovered) {
         // Мягкая тень подчёркивает активный элемент под курсором
         auto *fx = new QGraphicsDropShadowEffect();
-        fx->setBlurRadius(14);
-        fx->setOffset(4, 4);
-        fx->setColor(QColor(0, 0, 0, 170));
+        fx->setBlurRadius(14);      // степень размытости тени
+        fx->setOffset(4, 4);        // смещение тени вправо и вниз
+        fx->setColor(QColor(0, 0, 0, 170)); // чёрный цвет с прозрачностью
         setGraphicsEffect(fx);
     } else {
         setGraphicsEffect(nullptr); // эффект не нужен — убираем
@@ -206,7 +214,9 @@ void ShapeItem::updateEffect()
 // Двойной клик открывает системный диалог выбора цвета заливки.
 void ShapeItem::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 {
+    // Передаём текущий цвет как начальный — пользователь видит уже выбранный цвет
     QColor color = QColorDialog::getColor(m_brush.color(), nullptr, "Цвет заливки");
+    // isValid() == false если пользователь нажал "Отмена"
     if (color.isValid())
         setFillColor(color);
     QGraphicsItem::mouseDoubleClickEvent(event);
@@ -254,20 +264,23 @@ void ShapeItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
             m_undoStack->push(new RemoveItemCommand(scene(), this));
     });
 
+    // Показываем меню в позиции курсора и блокируем до выбора пункта
     menu.exec(event->screenPos());
 }
 
+// Курсор вошёл в область фигуры — включаем тень
 void ShapeItem::hoverEnterEvent(QGraphicsSceneHoverEvent *event)
 {
     m_hovered = true;
-    updateEffect(); // включаем тень
+    updateEffect();
     QGraphicsItem::hoverEnterEvent(event);
 }
 
+// Курсор покинул область фигуры — убираем тень
 void ShapeItem::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 {
     m_hovered = false;
-    updateEffect(); // убираем тень
+    updateEffect();
     QGraphicsItem::hoverLeaveEvent(event);
 }
 

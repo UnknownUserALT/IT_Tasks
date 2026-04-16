@@ -18,9 +18,11 @@ public:
     explicit ShapeScene(QObject *parent = nullptr);
 
 signals:
-    /// Испускается при клике левой кнопкой мыши по пустому месту сцены
+    /// Испускается при клике левой кнопкой мыши по пустому месту сцены.
+    /// scenePos — координаты точки клика в системе координат сцены.
     void clickedAtEmpty(QPointF scenePos);
 
 protected:
+    /// Переопределяем для отслеживания кликов по пустому месту
     void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
 };

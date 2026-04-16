@@ -24,10 +24,14 @@ public:
     explicit ShapeView(QWidget *parent = nullptr);
 
 signals:
-    /// Испускается при нажатии Delete или Backspace
+    /// Испускается при нажатии Delete или Backspace.
+    /// MainWindow перехватывает этот сигнал и удаляет выделенные фигуры.
     void deletePressed();
 
 protected:
+    /// Колесо мыши: вращение (Ctrl), масштаб (Shift), прокрутка (без модификатора)
     void wheelEvent(QWheelEvent *event)  override;
+
+    /// Клавиатура: PageUp/PageDown (z-порядок), Delete/Backspace (удаление)
     void keyPressEvent(QKeyEvent *event) override;
 };
