@@ -12,7 +12,7 @@ set(CMAKE_AUTORCC ON)
 find_package(Qt6 6.4 REQUIRED
     COMPONENTS Core Gui Widgets Sql Network Concurrent)
 
-set(SOURCES
+add_executable(library_catalog
     src/main.cpp
     src/mainwindow.cpp
     src/mainwindow.h
@@ -32,8 +32,6 @@ set(SOURCES
     src/statisticswidget.h
     resources/icons.qrc
 )
-
-qt_add_executable(library_catalog ${SOURCES})
 
 target_link_libraries(library_catalog PRIVATE
     Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Sql Qt6::Network Qt6::Concurrent)

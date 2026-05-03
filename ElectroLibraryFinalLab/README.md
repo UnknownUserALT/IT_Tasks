@@ -19,26 +19,41 @@
 ### D. Обложки книг из OpenLibrary
 При поиске книги по ISBN автоматически загружается обложка с covers.openlibrary.org. Обложки кэшируются локально в `QStandardPaths::CacheLocation/covers/`. Обложка отображается на карточке результата поиска и в панели деталей книги.
 
-## Как собрать
+## Как собрать (CLion, Windows)
 
 ### Требования
-- Qt 6.4+ (модули: Core, Gui, Widgets, Sql, Network, Concurrent)
-- CMake 3.16+
-- Компилятор с поддержкой C++17 (g++, clang, MSVC)
+- **CLion** (2022.3 или новее)
+- **Qt 6.4+** (модули: Core, Gui, Widgets, Sql, Network, Concurrent)
+- **CMake 3.16+** (встроен в CLion)
+- **Компилятор с поддержкой C++17** (MinGW или MSVC, идут в комплекте с Qt)
 
-### Сборка (Linux)
-```bash
-cmake -B build
-cmake --build build
-./build/library_catalog
-```
+### Пошаговая инструкция
 
-### Сборка (Windows, MSVC)
-```cmd
-cmake -B build -G "Visual Studio 17 2022"
-cmake --build build --config Release
-build\Release\library_catalog.exe
-```
+1. **Установить Qt 6.4+**
+   Скачать Qt Online Installer с [qt.io](https://www.qt.io/download-qt-installer) и установить нужную версию (например, `6.7.0`). При установке выбрать компилятор (MinGW или MSVC) и отметить модули: Core, Gui, Widgets, Sql, Network, Concurrent.
+
+2. **Открыть проект в CLion**
+   `File → Open` → выбрать корневую папку проекта (где лежит `CMakeLists.txt`). CLion автоматически обнаружит CMake-проект.
+
+3. **Настроить тулчейн**
+   `File → Settings → Build, Execution, Deployment → Toolchains`. Убедиться, что настроен тулчейн с тем же компилятором, который был выбран при установке Qt (MinGW или Visual Studio).
+
+4. **Указать путь к Qt в CMake**
+   `File → Settings → Build, Execution, Deployment → CMake`. В поле **CMake options** добавить:
+   ```
+   -DCMAKE_PREFIX_PATH=C:/Qt/6.7.0/mingw_64
+   ```
+   (Заменить путь на актуальный. Для MSVC это будет, например, `C:/Qt/6.7.0/msvc2022_64`.)
+
+5. **Собрать и запустить**
+   Нажать **Build → Build Project** (или `Ctrl+F9`). Затем выбрать конфигурацию `library_catalog` в выпадающем списке и нажать **Run** (`Shift+F10`).
+
+6. **Если приложение не запускается** (не находит Qt DLL)
+   Добавить путь к Qt DLL в переменную `PATH`. В CLion: `Run → Edit Configurations → Environment variables`:
+   ```
+   PATH=C:\Qt\6.7.0\mingw_64\bin;%PATH%
+   ```
+   Либо скопировать нужные DLL (`Qt6Core.dll`, `Qt6Gui.dll`, `Qt6Widgets.dll`, `Qt6Sql.dll`, `Qt6Network.dll`, `Qt6Concurrent.dll`) в папку с исполняемым файлом.
 
 ## Структура проекта
 
