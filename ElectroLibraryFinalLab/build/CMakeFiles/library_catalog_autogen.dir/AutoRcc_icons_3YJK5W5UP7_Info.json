@@ -1,0 +1,28 @@
+{
+	"BUILD_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build/library_catalog_autogen",
+	"CMAKE_BINARY_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab",
+	"CMAKE_SOURCE_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build/library_catalog_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/refresh.png",
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/delete.png",
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/export.png",
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/import.png",
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/add.png",
+		"/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons/edit.png"
+	],
+	"LOCK_FILE" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/library_catalog_autogen.dir/AutoRcc_icons_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/library_catalog_autogen.dir/AutoRcc_icons_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "/home/worker/CLionProjects/ElectroLibraryFinalLab/resources/icons.qrc",
+	"VERBOSITY" : 0
+}

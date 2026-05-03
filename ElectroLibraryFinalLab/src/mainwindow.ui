@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Каталог электронной библиотеки</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="centralLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex"><number>0</number></property>
+
+      <!-- Tab 1: Library -->
+      <widget class="QWidget" name="tabLibrary">
+       <attribute name="title"><string>Библиотека</string></attribute>
+       <layout class="QVBoxLayout" name="libraryMainLayout">
+        <!-- Search and filter bar -->
+        <item>
+         <layout class="QHBoxLayout" name="searchLayout">
+          <item>
+           <widget class="QLineEdit" name="editSearch">
+            <property name="placeholderText"><string>Поиск по названию или автору...</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboStatusFilter"/>
+          </item>
+         </layout>
+        </item>
+        <!-- Table and details splitter -->
+        <item>
+         <widget class="QSplitter" name="librarySplitter">
+          <property name="orientation"><enum>Qt::Horizontal</enum></property>
+          <widget class="QTableView" name="tableBooks">
+           <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+           <property name="selectionMode"><enum>QAbstractItemView::SingleSelection</enum></property>
+           <property name="sortingEnabled"><bool>true</bool></property>
+           <property name="alternatingRowColors"><bool>true</bool></property>
+          </widget>
+          <widget class="QWidget" name="detailsPanel">
+           <layout class="QVBoxLayout" name="detailsLayout">
+            <item>
+             <widget class="QLabel" name="lblDetailTitle">
+              <property name="text"><string>Выберите книгу</string></property>
+              <property name="wordWrap"><bool>true</bool></property>
+              <property name="font">
+               <font><pointsize>14</pointsize><bold>true</bold></font>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblDetailAuthor">
+              <property name="text"><string></string></property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblDetailInfo">
+              <property name="text"><string></string></property>
+              <property name="wordWrap"><bool>true</bool></property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblDetailNotes">
+              <property name="text"><string></string></property>
+              <property name="wordWrap"><bool>true</bool></property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblDetailCover">
+              <property name="text"><string></string></property>
+              <property name="alignment"><set>Qt::AlignCenter</set></property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="detailsSpacer">
+              <property name="orientation"><enum>Qt::Vertical</enum></property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Tab 2: Statistics -->
+      <widget class="QWidget" name="tabStatistics">
+       <attribute name="title"><string>Статистика</string></attribute>
+       <layout class="QVBoxLayout" name="statsMainLayout">
+        <item>
+         <layout class="QHBoxLayout" name="statsCardsLayout">
+          <item>
+           <widget class="QGroupBox" name="groupTotal">
+            <property name="title"><string>Всего книг</string></property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QLabel" name="lblStatTotal">
+               <property name="text"><string>0</string></property>
+               <property name="alignment"><set>Qt::AlignCenter</set></property>
+               <property name="font"><font><pointsize>20</pointsize><bold>true</bold></font></property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupRead">
+            <property name="title"><string>Прочитано</string></property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QLabel" name="lblStatRead">
+               <property name="text"><string>0</string></property>
+               <property name="alignment"><set>Qt::AlignCenter</set></property>
+               <property name="font"><font><pointsize>20</pointsize><bold>true</bold></font></property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupReading">
+            <property name="title"><string>Читаю</string></property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QLabel" name="lblStatReading">
+               <property name="text"><string>0</string></property>
+               <property name="alignment"><set>Qt::AlignCenter</set></property>
+               <property name="font"><font><pointsize>20</pointsize><bold>true</bold></font></property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupRating">
+            <property name="title"><string>Средний рейтинг</string></property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QLabel" name="lblStatRating">
+               <property name="text"><string>0.0</string></property>
+               <property name="alignment"><set>Qt::AlignCenter</set></property>
+               <property name="font"><font><pointsize>20</pointsize><bold>true</bold></font></property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblChartTitle">
+          <property name="text"><string>Количество книг по годам</string></property>
+          <property name="font"><font><pointsize>12</pointsize><bold>true</bold></font></property>
+          <property name="alignment"><set>Qt::AlignCenter</set></property>
+         </widget>
+        </item>
+        <!-- StatisticsWidget will be inserted here programmatically -->
+       </layout>
+      </widget>
+
+      <!-- Tab 3: OpenLibrary Import -->
+      <widget class="QWidget" name="tabImport">
+       <attribute name="title"><string>Импорт из OpenLibrary</string></attribute>
+       <layout class="QVBoxLayout" name="importMainLayout">
+        <item>
+         <layout class="QHBoxLayout" name="isbnSearchLayout">
+          <item>
+           <widget class="QLabel" name="lblIsbn">
+            <property name="text"><string>ISBN:</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editIsbn">
+            <property name="placeholderText"><string>Введите ISBN (например, 9780134685991)</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnFetch">
+            <property name="text"><string>Найти</string></property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupResult">
+          <property name="title"><string>Результат поиска</string></property>
+          <layout class="QFormLayout" name="resultLayout">
+           <item row="0" column="0">
+            <widget class="QLabel"><property name="text"><string>Название:</string></property></widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="lblResultTitle">
+             <property name="text"><string>—</string></property>
+             <property name="wordWrap"><bool>true</bool></property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel"><property name="text"><string>Автор:</string></property></widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="lblResultAuthor">
+             <property name="text"><string>—</string></property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel"><property name="text"><string>Дата публикации:</string></property></widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="lblResultDate">
+             <property name="text"><string>—</string></property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel"><property name="text"><string>Страниц:</string></property></widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="lblResultPages">
+             <property name="text"><string>—</string></property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel"><property name="text"><string>Жанр:</string></property></widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="lblResultGenre">
+             <property name="text"><string>—</string></property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel"><property name="text"><string>Обложка:</string></property></widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="lblResultCover">
+             <property name="text"><string></string></property>
+             <property name="alignment"><set>Qt::AlignCenter</set></property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAddToLibrary">
+          <property name="text"><string>Добавить в библиотеку</string></property>
+          <property name="enabled"><bool>false</bool></property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="importSpacer">
+          <property name="orientation"><enum>Qt::Vertical</enum></property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle"><string>Панель инструментов</string></property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

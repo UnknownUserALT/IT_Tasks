@@ -1,0 +1,5 @@
+/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/library_catalog.dir
+/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/edit_cache.dir
+/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/rebuild_cache.dir
+/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/library_catalog_autogen_timestamp_deps.dir
+/home/worker/CLionProjects/ElectroLibraryFinalLab/build/CMakeFiles/library_catalog_autogen.dir
